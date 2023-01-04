@@ -1,31 +1,131 @@
 .App {
-  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  font-size: 16px;
+  color: white;
 }
+
+.App-header {
+  height: 60px;
+  width: 100%;
+  background-color: #3a3f4b;
+  color: white;
+}
+
+.App-main {
+  color: white;
+}
+
+.List-formatted {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.Section {
+  margin: 16px;
+}
+
+.Error {
+  color: red;
+  font-size: 12px;
+  /* max-width: 200px; */
+}
+
+.Row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.List-item {
+  padding: 8px;
+  border-bottom: 1px gray solid;
+}
+
+/* .List-item:nth-child(2n) {
+  background-color: #63635e;
+}
+
+.List-item:nth-child(2n + 1) {
+  background-color: #474747;
+} */
+
+.List-item:last-child {
+  border-bottom: none;
+}
+
+.Card {
+  width: 100%;
+  border-radius: 8px;
+  background-color: #3a3f4b;
+  /* min-height: 30px; */
+}
+
+.Input {
+  outline: none;
+  border: 1px gray solid;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width : 100%;
+  padding: 8px;
+  margin: 0;
+  /* max-width: 200px; */
+}
+
+.Input.Input-compact {
+  border-radius: 4px 0 0 4px;
+}
+/* .Input:active {
+  border: 1px red solid;
+} */
+
+.Button {
+  border: none;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: aquamarine;
+}
+.Button.Button-compact {
+  border-radius: 0 4px 4px 0;
+}
+
+.Input-compact {
+  z-index: 100;
+  border-radius: 4px;
+}
+
+.One-column {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.Two-column {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+
+.Center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ************************** */
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (min-width: 500px) {
+  .Two-column {
+    flex-direction: row;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
+  
 }
 
 @keyframes App-logo-spin {
