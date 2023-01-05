@@ -95,6 +95,10 @@
   border-radius: 4px;
 }
 
+.Text-display {
+  font-size: 32px;
+}
+
 .One-column {
   display: inline-flex;
   flex-wrap: wrap;

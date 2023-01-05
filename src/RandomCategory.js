@@ -25,8 +25,8 @@ export default function RandomCategory({random, count, setCount, addToHistory}) 
     <div className="Card Center">
         {
           count >= 0 ?
-          <p>{count}</p> :
-          <p>{random}</p>
+          <p className="Text-display">{count}</p> :
+          <p className="Text-display">{random}</p>
         }
     </div>
   )

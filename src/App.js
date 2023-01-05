@@ -2,6 +2,7 @@ import { useState, useRef } from 'react'
 import './App.css'
 import CategoryList from './CategoryList'
 import RandomCategory from './RandomCategory'
+import Participants from './Participants'
 
 const TIME_INTERVAL = 5
 
@@ -14,10 +15,10 @@ function App() {
   const [count, setCount] = useState(TIME_INTERVAL)
   const [lastRandom, setLastRandom] = useState("")
   const [error, setError] = useState("")
-  
+
   const inputReference = useRef(null);
 
-  const addCategory = (e) => {
+  const changeCategory = (e) => {
     const category = e.target.value
     setCategory(category)
     setError("")
@@ -90,10 +91,10 @@ function App() {
             <form onSubmit={addToList} className="One-column">
               <div>
                 <div className="Row">
-                  <input className="Input Input-compact" type="text" name="category" placeholder="Ingrese categoría" value={category} onChange={addCategory} ref={inputReference}/>
-                  {error && <p className="Error">{error}</p>}
+                  <input className="Input Input-compact" autoComplete="off" type="text" name="category" placeholder="Ingrese categoría" value={category} onChange={changeCategory} ref={inputReference}/>
                   <input className="Button Button-compact" type="submit" value="Agregar"/>
                 </div>
+                {error && <p className="Error">{error}</p>}
               </div>
             </form>
             <button className="Button" onClick={getRandomItem}>Random</button>
@@ -122,12 +123,14 @@ function App() {
           <>
             <section className="Section">
               <h4>Historial</h4>
-              </section>
+            </section>
             <section className="Section">
               <CategoryList items={history} removeCategory={removeItemFromHistory}/>
             </section>
           </>
         }
+        <Participants />
+
       </main>
     </div>
   )
