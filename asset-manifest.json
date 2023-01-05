@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/genshin-tournament/static/css/main.e634df82.css",
-    "main.js": "/genshin-tournament/static/js/main.07414008.js",
+    "main.css": "/genshin-tournament/static/css/main.38a162c4.css",
+    "main.js": "/genshin-tournament/static/js/main.ca6e720f.js",
     "static/js/787.bba86d65.chunk.js": "/genshin-tournament/static/js/787.bba86d65.chunk.js",
     "index.html": "/genshin-tournament/index.html",
-    "main.e634df82.css.map": "/genshin-tournament/static/css/main.e634df82.css.map",
-    "main.07414008.js.map": "/genshin-tournament/static/js/main.07414008.js.map",
+    "main.38a162c4.css.map": "/genshin-tournament/static/css/main.38a162c4.css.map",
+    "main.ca6e720f.js.map": "/genshin-tournament/static/js/main.ca6e720f.js.map",
     "787.bba86d65.chunk.js.map": "/genshin-tournament/static/js/787.bba86d65.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e634df82.css",
-    "static/js/main.07414008.js"
+    "static/css/main.38a162c4.css",
+    "static/js/main.ca6e720f.js"
   ]
 }
